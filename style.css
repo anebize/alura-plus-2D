@@ -1,9 +1,8 @@
 :root{
     --branco-principal:#FFFFFF;
     --cinza-secundario:#C0C0C0;
-    --botao-azul:#FFC0CB;
+    --botao-azul:#FFC0CB	;
     --cor-de-fundo:#00030C;
-    
 }
 *{
     margin: 0;
@@ -12,6 +11,8 @@
 body{
     background-color:var(--cor-de-fundo);
     color: var(--branco-principal);
+
+
 }
 .principal{
     background-image: url("img/Background.png");
@@ -21,12 +22,17 @@ body{
 .container{
     height: 100vh;
     display: grid;
+    grid-template-columns: 50% 50%;
 }
-
 .container-botao{
     background-color: var(--botao-azul);
     border-radius: 5px;
     padding: 1em;
     color: var(--branco-principal);
-    display:block;
+    display: block;
+}
+.botao-secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+
 }
